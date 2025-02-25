@@ -1,0 +1,147 @@
+/* основа */
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-color: black;
+  color: white;
+}
+/* основные контейнеры */
+#osnova{
+  user-select: none;
+  background-color: rgb(161, 191, 255);
+  width: 700px;
+  height: 700px;
+  position: relative;
+  top: 10px;
+  left: 30%;
+}
+#wind{
+  background-color: cornflowerblue;
+  color: rgb(40, 74, 138);
+  font-weight: 900;
+  font-size: 30px;
+  word-break:break-all;
+  overflow: auto;
+  width: 25%;
+  height: 10%;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+#wind1{
+  background-color: cornflowerblue;
+  color: rgb(31, 56, 104);
+  font-weight: 900;
+  font-size: 35px;
+  word-break:break-all;
+  overflow: auto;
+  width: 65%;
+  height: 10%;
+  position: absolute;
+  top: 5%;
+  left: 30%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+}
+#display{
+  background-color: rgb(118, 154, 221);
+  width: 90%;
+  height: 80%;
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+#display1{
+  position: absolute;
+  top: 3%;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-self: start;
+}
+#namber{
+  width: 50%;
+  height: 75%;
+  position: absolute;
+  bottom: 0%;
+  left: 25%;
+}
+/* контейнер кнопок */
+.knopka{
+  cursor: pointer;
+  background-color: aquamarine;
+  color: rgb(0, 94, 62);
+  width: 70px;
+  height:70px;
+  font-size: 80px;
+  display: flex;
+  align-items: center;
+	justify-content: center;
+  font-weight: 900;
+  float: left;
+  margin-right: 2%;
+  margin-left: 2%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px rgb(0, 48, 32);
+}
+.knopka1{
+  cursor: pointer;
+  background-color: aquamarine;
+  color: rgb(0, 94, 62);
+  width: 70px;
+  height:70px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+	justify-content: center;
+  font-weight: 900;
+  float: left;
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px rgb(0, 48, 32);
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.knopka:hover, .knopka1:hover{
+  background-color: rgb(104, 212, 176);
+}
+.knopka:active, .knopka1:active{
+  background-color: rgb(89, 179, 149);
+  box-shadow: none;
+  border-top: 2px solid rgb(0, 48, 32);
+  border-left: 2px solid rgb(0, 48, 32);
+  width: 68px;
+  height: 68px;
+}
+/* кнопки управления */
+#ymno span{
+  position: absolute;
+  top:3px;
+}
+#minys span{
+  position: absolute;
+  bottom: -3px;
+}
+#c{
+  margin-left: auto;
+}
+#c span{
+  position: absolute;
+  top: -17px;
+}
+/* кнопки цифр */
+#q0{
+  position: absolute;
+  top: 62.5%;
+  left: 32.5%;
+}
+#del2{
+  position: absolute;
+  top: 128%;
+  left: 85%;
+  font-size: 55px;
+}
