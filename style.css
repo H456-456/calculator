@@ -1,0 +1,137 @@
+/* основа */
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-color: black;
+  color: white;
+}
+/* основные контейнеры */
+#osnova{
+  user-select: none;
+  background-color: rgb(161, 191, 255);
+  width: 700px;
+  height: 700px;
+  position: relative;
+  top: 10px;
+  left: 30%;
+}
+#wind{
+  background-color: cornflowerblue;
+  color: rgb(40, 74, 138);
+  font-weight: 900;
+  font-size: 30px;
+  word-break:break-all;
+  overflow: auto;
+  width: 25%;
+  height: 10%;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+#wind1{
+  background-color: cornflowerblue;
+  color: rgb(31, 56, 104);
+  font-weight: 900;
+  font-size: 35px;
+  word-break:break-all;
+  overflow: auto;
+  width: 65%;
+  height: 10%;
+  position: absolute;
+  top: 5%;
+  left: 30%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+}
+#display{
+  background-color: rgb(118, 154, 221);
+  width: 90%;
+  height: 80%;
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+#display1{
+  position: absolute;
+  top: 3%;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#display2{
+  position: absolute;
+  width: 30%;
+  height: 79%;
+  position: absolute;
+  bottom: 0%;
+  left: 60%; 
+}
+#number{
+  width: 50%;
+  height: 80%;
+  position: absolute;
+  bottom: 0%;
+  left: 10%;
+}
+/* кнопки */
+button{
+  border: none;
+  cursor: pointer;
+  background-color: aquamarine;
+  color: rgb(0, 94, 62);
+  width: 70px;
+  height:70px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+	justify-content: center;
+  font-weight: 900;
+  float: left;
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px rgb(0, 48, 32);
+}
+#display1 button{
+  margin-left: 3%;
+  margin-right: 3%;
+}
+#display2 button{
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-top: 6%;
+}
+#number button{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+#display1 button:hover, #number button:hover, #display2 button:hover{
+  background-color: rgb(104, 212, 176);
+}
+#display1 button:active, #number button:active, #display2 button:active{
+  background-color: rgb(89, 179, 149);
+  box-shadow: none;
+  border-top: 2px solid rgb(0, 48, 32);
+  border-left: 2px solid rgb(0, 48, 32);
+
+}
+/* кнопки управления */
+#ymno span{
+  position: absolute;
+  top: -5px;
+  font-size: 75px;
+}
+#minys span{
+  position: absolute;
+  bottom: -9px;
+  font-size: 75px;
+}
+#c span{
+  position: absolute;
+  top: 5px;
+}
+/* кнопки цифр */
