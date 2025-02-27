@@ -1,0 +1,190 @@
+/* основа */
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-color: black;
+  color: white;
+}
+/* основные контейнеры */
+#osnova{
+  user-select: none;
+  background-color: rgb(161, 191, 255);
+  width: 850px;
+  height: 700px;
+  position: relative;
+  top: 10px;
+  left: 30%;
+}
+#wind, #wind1, #wind0{
+  background-color: cornflowerblue;
+  color: rgb(40, 74, 138);
+  font-weight: 900;
+  word-break:break-all;
+  overflow: auto;
+  height: 20%;
+  top: 5%;
+  left: 12%;
+  width: 20%;
+}
+#wind{
+  color: rgb(18, 33, 61);
+  position: absolute;
+  top: 5%;
+  font-size: 30px;
+  height: 10%;
+}
+#wind0{
+  color: rgb(22, 63, 141);
+  position: absolute;
+  top: 15%;
+  font-size: 30px;
+  height: 10%;
+}
+#wind1{
+  width: 65%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: absolute;
+  left: 32%;
+  font-size: 35px;
+}
+#display{
+  background-color: rgb(118, 154, 221);
+  width: 85%;
+  height: 70%;
+  position: absolute;
+  top: 25%;
+  left: 12%; 
+}
+#display1{
+  position: absolute;
+  top: 3%;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#display2{
+  position: absolute;
+  width: 30%;
+  height: 79%;
+  position: absolute;
+  bottom: 0%;
+  left: 60%; 
+}
+#number{
+  width: 50%;
+  height: 80%;
+  position: absolute;
+  bottom: 0%;
+  left: 10%;
+}
+/* кнопки */
+button{
+  border: none;
+  cursor: pointer;
+  background-color: aquamarine;
+  color: rgb(0, 94, 62);
+  width: 70px;
+  height:70px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+	justify-content: center;
+  font-weight: 900;
+  float: left;
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px rgb(0, 48, 32);
+}
+#display1 button{
+  margin-left: 3%;
+  margin-right: 3%;
+}
+#display2 button{
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-top: 6%;
+}
+#number button{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+#display1 button:hover, #number button:hover, #display2 button:hover,#qx:hover, #qy:hover,#qix:hover{
+  background-color: rgb(104, 212, 176);
+}
+#display1 button:active, #number button:active, #display2 button:active,#qx:active, #qy:active,#qix:active{
+  background-color: rgb(89, 179, 149);
+  box-shadow: none;
+  border-top: 2px solid rgb(0, 48, 32);
+  border-left: 2px solid rgb(0, 48, 32);
+
+}
+/* кнопки управления */
+#ymno span{
+  position: absolute;
+  top: -5px;
+  font-size: 75px;
+}
+#minys span{
+  position: absolute;
+  bottom: -9px;
+  font-size: 75px;
+}
+#c span{
+  position: absolute;
+  top: 5px;
+}
+#qx{
+  position: absolute;
+  top: 7%;
+}
+#qn{
+  position: absolute;
+  top: 12%;
+}
+#qy{  
+  position: absolute;
+  top: 17%;
+}
+#qx, #qy, #qn, #qr, #qi{
+  left: 5%;
+  height: 30px;
+  width: 30px;
+  font-size: 16px;
+}
+#qn, #qr, #qi{
+  border: none;
+  cursor: default;
+  background-color: rgb(126, 238, 253);
+  color: rgb(0, 22, 94);
+  display: flex;
+  align-items: center;
+	justify-content: center;
+  font-weight: 900;
+  float: left;
+  border-radius: 10px;
+  box-shadow: 2px 2px 1px rgb(0, 3, 48);
+}
+#qqq{
+  position: absolute;
+}
+#qr{
+  position: absolute;
+  top: 22%;
+}
+#qi{
+  position: absolute;
+  top: 27%;
+}
+#qix{
+  font-size: 35px;
+  position: absolute;
+  top: 41.6%;
+  left: 87%;
+  z-index: 3;
+}
+/* кнопки цифр */
