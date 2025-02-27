@@ -145,6 +145,8 @@ plys.addEventListener('click', function () {
 		z = 1
 		wind.innerHTML = x + '+'
 	}
+	y = " ";
+	wind1.innerHTML = 0;
 });
 
 minys.addEventListener('click', function () {
@@ -157,6 +159,8 @@ minys.addEventListener('click', function () {
 		z = 2
 		wind.innerHTML = x + '-'
 	}
+	y = " ";
+	wind1.innerHTML = 0;
 });
 
 ymno.addEventListener('click', function () {
@@ -169,6 +173,8 @@ ymno.addEventListener('click', function () {
 		z = 3
 		wind.innerHTML = x + '*'
 	}
+	y = " ";
+	wind1.innerHTML = 0;
 });
 
 delit.addEventListener('click', function () {
@@ -181,6 +187,8 @@ delit.addEventListener('click', function () {
 		z = 4
 		wind.innerHTML = x + '/'
 	}
+	y = " ";
+	wind1.innerHTML = 0;
 });
 
 ravno.addEventListener('click', function () {
