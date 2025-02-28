@@ -49,90 +49,90 @@ qy.addEventListener('click', function () {
 /*функции цифр*/
 q1.addEventListener('click', function() {
 	if(a == 1) {
-			x += 1;
+			x += "1";
 			wind.innerHTML = x;
 	} else {
-			y += 1;
+			y += "1";
 			wind0.innerHTML = y;
 	}
 });
 
 q2.addEventListener('click', function () {
 	if (a == 1) {
-		x += 2
+		x += "2"
 		wind.innerHTML = x
 	} else {
-		y += 2
+		y += "2"
 		wind0.innerHTML = y
 	}
 });
 
 q3.addEventListener('click', function () {
 	if (a == 1) {
-		x += 3
+		x += "3"
 		wind.innerHTML = x
 	} else {
-		y += 3
+		y += "3"
 		wind0.innerHTML = y
 	}
 });
 
 q4.addEventListener('click', function () {
 	if (a == 1) {
-		x += 4
+		x += "4"
 		wind.innerHTML = x
 	} else {
-		y += 4
+		y += "4"
 		wind0.innerHTML = y
 	}
 });
 
 q5.addEventListener('click', function () {
 	if (a == 1) {
-		x += 5
+		x += "5"
 		wind.innerHTML = x
 	} else {
-		y += 5
+		y += "5"
 		wind0.innerHTML = y
 	}
 });
 
 q6.addEventListener('click', function () {
 	if (a == 1) {
-		x += 6
+		x += "6"
 		wind.innerHTML = x
 	} else {
-		y += 6
+		y += "6"
 		wind0.innerHTML = y
 	}
 });
 
 q7.addEventListener('click', function () {
 	if (a == 1) {
-		x += 7
+		x += "7"
 		wind.innerHTML = x
 	} else {
-		y += 7
+		y += "7"
 		wind0.innerHTML = y
 	}
 });
 
 q8.addEventListener('click', function () {
 	if (a == 1) {
-		x += 8
+		x += "8"
 		wind.innerHTML = x
 	} else {
-		y += 8
+		y += "8"
 		wind0.innerHTML = y
 	}y;
 });
 
 q9.addEventListener('click', function () {
 	if (a == 1) {
-		x += 9
+		x += "9"
 		wind.innerHTML = x
 	} else {
-		y += 9
+		y += "9"
 		wind0.innerHTML = y
 	}
 });
@@ -184,10 +184,10 @@ qq.addEventListener('click', function () {
 
 q0.addEventListener('click', function () {
 	if (a == 1) {
-		x += 0
+		x += "0"
 		wind.innerHTML = x
 	} else {
-		y += 0
+		y += "0"
 		wind0.innerHTML = y
 	}
 });
@@ -211,11 +211,9 @@ c.addEventListener('click', function () {
 });
 
 del.addEventListener('click', function () {
-  const yy = y.slice(0, -1);
-	const ww = x.slice(0, -1);
 	if( a == 1){
+		const ww = x.slice(0, -1);
 		x = ww;
-		wind.innerHTML = x;
 		switch (x) {
 			case '':
 				wind.innerHTML = 0;
@@ -224,11 +222,12 @@ del.addEventListener('click', function () {
 				wind.innerHTML = 0;
 				break;
 			default:
+				wind.innerHTML = x
 				break;
 		}
 	}else{
+		const yy = y.slice(0, -1);
 		y = yy;
-		wind0.innerHTML = y;
 		switch (y) {
 			case '':
 				wind0.innerHTML = 0;
@@ -237,6 +236,7 @@ del.addEventListener('click', function () {
 				wind0.innerHTML = 0;
 				break;
 			default:
+				wind0.innerHTML = y;
 				break;
 		}	
 	}
@@ -300,6 +300,6 @@ ravno.addEventListener('click', function () {
 });
 
 qix.addEventListener('click', function (){
-	x = i;
+	x = String(i);
 	wind.innerHTML = x;
 });
