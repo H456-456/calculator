@@ -7,6 +7,12 @@ const c = document.getElementById('c');
 const del = document.getElementById('del');
 const del2 = document.getElementById('del2');
 const ravno = document.getElementById('ravno');
+const opasity = document.getElementById('opasity');
+const qx = document.getElementById('qx');
+const qn = document.getElementById('qn');
+const qy = document.getElementById('qy');
+const qqq = document.getElementById('qqq');
+const qix = document.getElementById('qix');
 /*кнопки  цифр*/
 const q1 = document.getElementById('q1');
 const q2 = document.getElementById('q2');
@@ -24,12 +30,9 @@ const q00 = document.getElementById('q00');
 const wind = document.getElementById('wind');
 const wind1 = document.getElementById('wind1');
 const wind0 = document.getElementById('wind0');
-const qx = document.getElementById('qx');
-const qn = document.getElementById('qn');
-const qy = document.getElementById('qy');
-const qqq = document.getElementById('qqq');
-const qix = document.getElementById('qix')
+const osnova = document.getElementById('osnova');
 /*переменные*/
+var o = 0;//основа//
 var x = " ";
 var y = " ";
 var i = 0;
@@ -299,7 +302,19 @@ ravno.addEventListener('click', function () {
 	}
 });
 
-qix.addEventListener('click', function (){
-	x = String(i);
-	wind.innerHTML = x;
+qix.addEventListener('click', function (event) {
+	x = String(i)
+	wind.innerHTML = x
+})
+
+opasity.addEventListener('click', function (event) {
+	if (o == 1) {
+		osnova.style.top = '-800px'
+		opasity.innerHTML = 'калькулятор⇩';
+		o = 0;
+	} else {
+		osnova.style.top = '10px'
+		opasity.innerHTML = 'калькулятор⇧';
+		o = 1;
+	}
 });

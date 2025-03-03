@@ -14,8 +14,9 @@ body{
   width: 850px;
   height: 700px;
   position: relative;
-  top: 10px;
   left: 30%;
+  top: -800px;
+  transition: top 2s;
 }
 #wind, #wind1, #wind0{
   background-color: cornflowerblue;
@@ -34,6 +35,7 @@ body{
   top: 5%;
   font-size: 30px;
   height: 10%;
+  transition: color 1s;
 }
 #wind0{
   color: rgb(22, 63, 141);
@@ -41,6 +43,7 @@ body{
   top: 15%;
   font-size: 30px;
   height: 10%;
+  transition: color 1s,;
 }
 #wind1{
   width: 65%;
@@ -99,6 +102,14 @@ button{
   border-radius: 5px;
   box-shadow: 2px 2px 1px rgb(0, 48, 32);
 }
+#opasity{
+  user-select: none;
+  position: absolute;;
+  top: 10px;
+  left: 10px;
+  width: 400px;
+  box-shadow: none;
+}
 #display1 button{
   margin-left: 3%;
   margin-right: 3%;
@@ -113,15 +124,18 @@ button{
   margin-right: 5%;
   margin-top: 5%;
 }
-#display1 button:hover, #number button:hover, #display2 button:hover,#qx:hover, #qy:hover,#qix:hover{
+#display1 button:hover, #number button:hover, #display2 button:hover,#qx:hover, #qy:hover,#qix:hover,#opasity:hover{
   background-color: rgb(104, 212, 176);
 }
-#display1 button:active, #number button:active, #display2 button:active,#qx:active, #qy:active,#qix:active{
+#display1 button:active, #number button:active, #display2 button:active,#qx:active, #qy:active,#qix:active,#opasity:active{
   background-color: rgb(89, 179, 149);
   box-shadow: none;
   border-top: 2px solid rgb(0, 48, 32);
   border-left: 2px solid rgb(0, 48, 32);
-
+}
+#opasity:active{
+  border-top: 3px solid rgb(0, 48, 32);
+  border-left: 3px solid rgb(0, 48, 32);
 }
 /* кнопки управления */
 #ymno span{
